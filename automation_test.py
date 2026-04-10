@@ -32,7 +32,7 @@ class TestAutomationExercise(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(self.URL)
 
-    # 🔥 HER SEFERİNDE REKLAMI TEMİZLE
+    
     def remove_ads(self):
         self.driver.execute_script("""
             document.querySelectorAll("iframe").forEach(el => el.remove());
